@@ -1,0 +1,11 @@
+{
+    "extends": "@tsconfig/recommended",
+    "compilerOptions": {
+        "declaration": true,
+        "outDir": "dist",
+        "noImplicitAny": false,
+        "jsx": "react",
+        "jsxFactory": "JSXFactory.createElement",
+        "jsxFragmentFactory": "JSXFactory.createFragment"
+    }
+}
