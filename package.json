@@ -1,37 +1,42 @@
 {
   "name": "@battis/jsx-api",
-  "version": "1.0.0",
   "description": "",
+  "version": "1.0.0",
+  "author": "Seth Battis <seth@battis.net>",
+  "license": "GPL-3.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc --project tsconfig.dist.json",
+    "build": "webpack",
     "test": "jest --config=jest.config.js"
   },
+  "homepage": "https://github.com/battis/jsx-api#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/battis/jsx-api.git"
   },
-  "author": "Seth Battis <seth@battis.net>",
-  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/battis/jsx-api/issues"
   },
-  "homepage": "https://github.com/battis/jsx-api#readme",
-  "devDependencies": {
+  "dependencies": {
     "@battis/jsx-factory": "battis/jsx-factory",
+    "@battis/jsx-lib": "battis/jsx-lib",
+    "@battis/jsx-routing": "battis/jsx-routing",
+    "@battis/require-init": "battis/require-init",
+    "path-browserify": "^1.0.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
     "@tsconfig/recommended": "^1.0.1",
     "@types/jest": "^27.4.0",
-    "@types/node": "^17.0.5",
+    "clean-webpack-plugin": "^4.0.0",
     "jest": "^27.4.5",
     "msw": "^0.36.3",
     "ts-jest": "^27.1.2",
+    "ts-loader": "^9.2.8",
     "typescript": "^4.5.4",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
     "whatwg-fetch": "^3.6.2"
-  },
-  "dependencies": {
-    "@battis/jsx-lib": "battis/jsx-lib",
-    "@battis/jsx-routing": "battis/jsx-routing",
-    "@battis/require-init": "battis/require-init"
   }
 }
